@@ -19,7 +19,8 @@ class AddStudent
             String str = scan.nextLine();
 			out.println(str);
      
-        out.close();
+			scan.close();	
+			out.close();
      
         } catch (Exception e) {
     
