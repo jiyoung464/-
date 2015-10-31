@@ -1,6 +1,4 @@
-import java.io.*;
-import java.io.File; 
-import java.io.IOException; 
+import java.io.*; 
 import java.util.Scanner; 
 
 public class ViewStudent {
@@ -19,12 +17,13 @@ public class ViewStudent {
 		try { 
 		readFile = new FileReader("studentlist.txt"); 
 		br = new BufferedReader(readFile);  
-		System.out.print("��ȸ �ϰ��� �ϴ� �й� �Է� : ");
+		System.out.print("조회 하고자 하는 학번 입력 : ");
 		id = sc.next();
+		if(id.length()!=7) System.out.print("잘못 입력하셨습니다. ");
 
-		while((getLine = br.readLine()) != null){  //gkgk
+		while((getLine = br.readLine()) != null){ 
 			if(getLine.contains(id)){ 
-			String token[] = getLine.split(" ");//�����̽� ���ڷ� �ܾ� ���� 
+			String token[] = getLine.split(" ");//스페이스 문자로 단어 추출 
 			id = token[0]; 
 			name = token[1]; 
 			department = token[2];
@@ -39,7 +38,7 @@ public class ViewStudent {
 		e.printStackTrace(); 
 	} 
 	if(name == "")
-		System.out.println("�ش� �й��� �����ϴ�.");
+		System.out.println("해당 학번이 없습니다.");
 	else System.out.println(sb.toString()); 
 	}
 		
@@ -48,7 +47,7 @@ public class ViewStudent {
 		ViewStudent view= new ViewStudent(); 
 		while (true)
 		{
-		System.out.print("�޴��� �����ϼ���. :");
+		System.out.print("메뉴를 선택하세요. :");
 		Scanner menuScanner = new Scanner(System.in);
 		menu = menuScanner.nextInt();
 		if(menu == 3)
