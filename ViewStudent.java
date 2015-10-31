@@ -19,12 +19,12 @@ public class ViewStudent {
 		try { 
 		readFile = new FileReader("studentlist.txt"); 
 		br = new BufferedReader(readFile);  
-		System.out.print("Á¶È¸ ÇÏ°íÀÚ ÇÏ´Â ÇÐ¹ø ÀÔ·Â : ");
+		System.out.print("ï¿½ï¿½È¸ ï¿½Ï°ï¿½ï¿½ï¿½ ï¿½Ï´ï¿½ ï¿½Ð¹ï¿½ ï¿½Ô·ï¿½ : ");
 		id = sc.next();
 
-		while((getLine = br.readLine()) != null){ 
+		while((getLine = br.readLine()) != null){  //gkgk
 			if(getLine.contains(id)){ 
-			String token[] = getLine.split(" ");//½ºÆäÀÌ½º ¹®ÀÚ·Î ´Ü¾î ÃßÃâ 
+			String token[] = getLine.split(" ");//ï¿½ï¿½ï¿½ï¿½ï¿½Ì½ï¿½ ï¿½ï¿½ï¿½Ú·ï¿½ ï¿½Ü¾ï¿½ ï¿½ï¿½ï¿½ï¿½ 
 			id = token[0]; 
 			name = token[1]; 
 			department = token[2];
@@ -39,7 +39,7 @@ public class ViewStudent {
 		e.printStackTrace(); 
 	} 
 	if(name == "")
-		System.out.println("ÇØ´ç ÇÐ¹øÀÌ ¾ø½À´Ï´Ù.");
+		System.out.println("ï¿½Ø´ï¿½ ï¿½Ð¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½.");
 	else System.out.println(sb.toString()); 
 	}
 		
@@ -48,7 +48,7 @@ public class ViewStudent {
 		ViewStudent view= new ViewStudent(); 
 		while (true)
 		{
-		System.out.print("¸Þ´º¸¦ ¼±ÅÃÇÏ¼¼¿ä. :");
+		System.out.print("ï¿½Þ´ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï¼ï¿½ï¿½ï¿½. :");
 		Scanner menuScanner = new Scanner(System.in);
 		menu = menuScanner.nextInt();
 		if(menu == 3)
