@@ -15,7 +15,8 @@ class AddStudent
             PrintWriter out = new PrintWriter(new FileWriter(fpath, true));
                String str = scan.nextLine();
 			   out.println(str);
-     
+        
+	    scan.close();
         out.close();
      
         } catch (Exception e) {
