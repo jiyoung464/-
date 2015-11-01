@@ -10,5 +10,6 @@
 			System.out.println("5)  ���α׷� ����");
 			System.out.println("6)  ���α׷� ����");
 			System.out.println("7)  ���α׷� ����");
+			System.out.println("8)  ���α׷� ����");
 		}
 }
