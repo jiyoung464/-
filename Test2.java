@@ -5,5 +5,6 @@ public class Test2 {
 		System.out.println("rebase test");
 		System.out.println("rebase test2");
 		System.out.println("rebase test3");
+		System.out.println("rebase test4");
 	}
 }
