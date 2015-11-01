@@ -3,10 +3,11 @@
 	{
 		public static void main(String[] args)
 		{
-			System.out.println("1)  ÇÐ»ý µî·Ï");
-			System.out.println("2)  ÇÐ»ý °Ë»ö");
-			System.out.println("3)  ÇÐ»ý »èÁ¦");
-			System.out.println("4)  ÇÐ»ý ±â·Ï ¼öÁ¤");
-			System.out.println("5)  ÇÁ·Î±×·¥ Á¾·á");
+			System.out.println("1)  ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½");
+			System.out.println("2)  ï¿½Ð»ï¿½ ï¿½Ë»ï¿½");
+			System.out.println("3)  ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("4)  ï¿½Ð»ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("5)  ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½");
+			System.out.println("6)  ï¿½ï¿½ï¿½Î±×·ï¿½ ï¿½ï¿½ï¿½ï¿½");
 		}
 }
